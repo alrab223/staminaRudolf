@@ -95,12 +95,15 @@ p {
 }
 
 @media (max-width: 600px) {
+   /* スマートフォン向けのスタイルをここに記述 */
    body {
-      padding: 10px;
+       padding: 20px;
    }
 
-   input,
-   p {
-      width: calc(100% - 20px);
+   .container {
+       width: 100%;
+       padding: 0;
    }
+
+   /* その他のスマートフォン向けのスタイル調整 */
 }
