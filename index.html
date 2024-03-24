@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>スタミナルドルフ計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>スタミナルドルフ計算機</h1>
+    
+    <!-- キーパッドを結果の上に配置 -->
+    <div id="keypad">
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <!-- 空のボタンを追加して位置を調整 -->
+        <button class="empty"></button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="clearInput()">C</button>
+    </div>
+    
+    <input type="number" id="inputAmount" placeholder="金額を入力" oninput="convertToStaminaldolf()">
+    <p id="output">スタミナルドルフ: 0</p>
+    
+    <script src="main.js"></script>
+</body>
+</html>

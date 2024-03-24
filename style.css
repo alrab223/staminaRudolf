@@ -1,0 +1,81 @@
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f5f5f5;
+   margin: 0;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-direction: column;
+}
+
+input,
+p {
+   width: 100%;
+   max-width: 300px;
+}
+
+input {
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 2px solid #007bff;
+   border-radius: 5px;
+}
+
+#keypad .empty {
+   visibility: hidden;
+   /* ボタンを非表示に */
+}
+
+#keypad {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   /* 3列のレイアウト */
+   gap: 10px;
+   /* ボタン間の隙間 */
+   margin-bottom: 20px;
+   /* 結果表示部との間隔 */
+   max-width: 300px;
+   /* キーパッドの最大幅 */
+}
+
+#keypad button {
+   padding: 15px;
+   /* ボタンのパディングを増やす */
+   font-size: 20px;
+   /* フォントサイズを大きく */
+   border: none;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#keypad button:hover {
+   background-color: #0056b3;
+}
+
+p {
+   /* 背景色の指定を削除 */
+   color: black; /* 文字色を黒に変更 */
+   text-align: center;
+   padding: 15px;
+   border-radius: 5px;
+   font-size: 20px;
+   box-shadow: none; /* 影を削除 */
+   border: 1px solid #ccc; /* 軽い境界線を追加してデザインを保持 */
+   margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+   body {
+      padding: 10px;
+   }
+
+   input,
+   p {
+      width: calc(100% - 20px);
+   }
+}
