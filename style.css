@@ -10,6 +10,14 @@ body {
    flex-direction: column;
 }
 
+body,
+html {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   /* 横スクロールを防ぐ */
+}
+
 input,
 p {
    width: 100%;
@@ -72,20 +80,30 @@ p {
 }
 
 #imageContainer {
-   border: 1px solid #ccc; /* 枠線を設定 */
-   display: flex; /* Flexコンテナを設定 */
-   flex-wrap: wrap; /* 画像を折り返す */
-   justify-content: flex-start; /* 左揃え */
-   align-items: flex-start; /* 縦方向の上揃え */
+   border: 1px solid #ccc;
+   /* 枠線を設定 */
+   display: flex;
+   /* Flexコンテナを設定 */
+   flex-wrap: wrap;
+   /* 画像を折り返す */
+   justify-content: flex-start;
+   /* 左揃え */
+   align-items: flex-start;
+   /* 縦方向の上揃え */
    padding: 5px;
    margin-bottom: 10px;
 }
 
-.full-image, .clip-image {
-   display: block; /* ブロック要素として表示 */
-   margin: 5px; /* 画像間の余白 */
-   max-width: 80px; /* 初期サイズを小さくする */
-   height: auto; /* 画像の高さを自動調整 */
+.full-image,
+.clip-image {
+   display: block;
+   /* ブロック要素として表示 */
+   margin: 5px;
+   /* 画像間の余白 */
+   max-width: 80px;
+   /* 初期サイズを小さくする */
+   height: auto;
+   /* 画像の高さを自動調整 */
 }
 
 .clip-image {
@@ -94,16 +112,12 @@ p {
    /* クリップのスタイルは削除し、JavaScriptで動的に設定 */
 }
 
-@media (max-width: 600px) {
-   /* スマートフォン向けのスタイルをここに記述 */
-   body {
-       padding: 20px;
+@media (max-width: 768px) {
+   header {
+       padding: 10px 5px; /* スマートフォン向けのパディングに調整 */
    }
-
-   .container {
-       width: 100%;
-       padding: 0;
+   .navbar {
+       font-size: 14px; /* スマートフォン向けのフォントサイズに調整 */
    }
-
-   /* その他のスマートフォン向けのスタイル調整 */
+   /* その他のスマートフォン向けスタイル調整 */
 }
