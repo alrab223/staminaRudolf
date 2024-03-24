@@ -30,7 +30,7 @@ function updateImages(staminaldolf) {
 
    // 画像の数に応じてコンテナの幅を設定
    const imageCount = Math.ceil(staminaldolf);
-   const imageWidth = imageContainer.offsetWidth / imageCount; // コンテナ幅を画像の数で割る
+   const imageWidth = 80; // コンテナ幅を画像の数で割る
 
    // 整数部分の画像を表示
    const fullImagesCount = Math.floor(staminaldolf);
