@@ -84,7 +84,7 @@ p {
 .full-image, .clip-image {
    display: block; /* ブロック要素として表示 */
    margin: 5px; /* 画像間の余白 */
-   max-width: 200px; /* 初期サイズを小さくする */
+   max-width: 80px; /* 初期サイズを小さくする */
    height: auto; /* 画像の高さを自動調整 */
 }
 
